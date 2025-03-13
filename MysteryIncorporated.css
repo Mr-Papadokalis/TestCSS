@@ -1,0 +1,1187 @@
+@charset "utf-8";
+/* CSS Document */
+/*! jQuery Mobile 1.4.5 | Git HEADhash: 68e55e7 <> 2014-10-31T17:33:30Z | (c) 2010, 2014 jQuery Foundation, Inc. | jquery.org/license */
+/* Licensed under the MIT/X11 License (http://opensource.org/licenses/MIT) */
+.headerContainer {
+  padding: 0.01em 16px;
+}
+html {
+  height: 100%;
+}
+.rightHeader {
+  float: right;
+  border-style: outset;
+}
+.leftHeader {
+  float: left;
+  background-color: #4CAF50;
+  border-style: outset;
+}
+.newRightHeader {
+  float: right;
+  position:static;
+  background-color: #ffb830;
+  color: #000000;
+  /*border-style: outset;*/
+}
+.centerHeader {
+  text-align: center;
+      transition-property:height;
+  transition: 0.25s;
+}
+.colors {
+  color: #FFFFFF;
+  background: linear-gradient(top, #3db2ff, #ffb830);
+  background: -ms-linear-gradient(top, #3db2ff, #ffb830);
+  background: -webkit-gradient(linear, left top, left bottom, from(#3db2ff), to(#ffb830));
+  background: -moz-linear-gradient(top, #3db2ff, #ffb830);
+}
+.w-nav {
+  position: relative;
+  /*z-index: 1000;*/
+  width: 100%;
+}
+.whatsNew {
+  position: fixed;
+  /*z-index: 1000*/
+}
+.w-nav-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 20px 1%;
+  text-align: center;
+}
+.w-nav-link:hover .subnav:hover {
+  color: #ff2442;
+  background: #FFFFFF;
+}
+.headerActive {
+  color: #ff2442;
+  background: #FFFFFF;
+}
+.w-nav-link.subnavActive {
+  color: #FFFFFF;
+  background: #6b7aa1;
+  border-radius: 5px;
+}
+.pinstripe {
+  /*background-image: url("https://connect.ncdot.gov/Style%20Library/Images/pinstripe.gif");
+  background-color: #fff;*/
+  background-color:#e8f6ef;
+  background-position: top left;
+  background-repeat: repeat-x;
+  /*border-style: ridge;
+  border-color:#ffb830;*/
+  padding: 10px;
+  background-size: cover
+}
+/*
+	.pinstripe {
+	border-style: ridge;
+}
+	*/
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.color {
+  background-color: #F3F3F3;
+  /*
+  background: linear-gradient(top, #7FABC4, #31424C);
+  background: -ms-linear-gradient(top, #7FABC4, #31424C);
+  background: -webkit-gradient(linear, left top, left bottom, from(#7FABC4), to(#31424C));
+  background: -moz-linear-gradient(top, #7FABC4, #31424C);
+	*/
+}
+.w-nav-links {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 02.5rem;
+  border-color: #007bff;
+  line-height: 1%;
+  padding: 10px 2px 10px 2px;
+}
+.w-nav-links:hover {
+  color: #007bff;
+  background: antiquewhite;
+  border-color: #007bff;
+}
+.w-nav-links:after {
+  color: #007bff;
+  background: antiquewhite;
+  border-color: #007bff;
+}
+.Milestone {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  border-style: ridge;
+  border-width: 15px;
+  border-color: #4CAF50;
+  background-color: antiquewhite;
+  text-align: center;
+  border-radius: 5px;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  right: 0;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.nav a {
+  color: #000000 !important;
+  font-style: normal !important;
+  text-decoration: none !important;
+} /*where removal of hyperlink comes*/
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #e9eff6;/*#5DBCD2;
+  /*background: url("Webpages/BackgroundImages/white.png");*/
+  /*background: url("Webpages/BackgroundImages/NCDOT_triskelion_logo_4C.png");*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 40%;
+  background-position: center;
+  margin: 0; /* to remove the default white margin of body */
+  padding: 0; /* to remove the default white margin of body */
+  /* overflow: auto;*/
+  /*background:	url("BackgroundImages/IMG_20191003_074738202_HDR.jpg");
+		 background-position: center;
+	background-attachment: fixed;
+	background-size: 50%;*/
+  /*background:rgba(2,191,231,1.00);*/
+  /*background: rgba(255,147,6,1.00);*/
+  /*background: rgba(238,57,138,1.00);*/
+}
+.btn {
+  line-height: .2px;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: #111; color inside pop-out*/
+  background-image: url("https://connect.ncdot.gov/Style%20Library/Images/pinstripe.gif");
+  background-color: #fff;
+  background-position: top left;
+  background-repeat: repeat-x;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 50px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181; /*font color of inside*/
+  display: block;
+  transition: 0.3s;
+}
+/*	.sidebar a:hover {
+  color: #f1f1f1;
+}*/
+.sidebar .closebtn {
+  font-size: 36px;
+  margin-left: 0px;
+}
+/*.openbtn:hover {
+  background-color: #444;
+
+}*/
+.collaspible {
+  background-color: #7FABC4;
+  color: white;
+  /*cursor: pointer;*/
+  cursor: help;
+  /*padding: 18px;*/
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 100%;
+  border: 1px outset #454545;
+}
+.active, .collaspible:hover {
+  background-color: #E85F35;
+}
+.collaspible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: '\2212';
+}
+.collaspiblecontent {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+#main {
+  transition: margin-left .5s;
+  /*padding: 16px;*/
+}
+* {
+  box-sizing: border-box;
+}
+}
+.column {
+  float: left;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.42857143;
+  /* sets up column characteristics*/
+}
+@media screen and (max-width:600px) {
+  .ProcessGuidance { /*has to be one word*/
+    width: 20px;
+    opacity: .95;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-top: 1%;
+    padding: 10px;
+    border: 3px ridge #ffb830 /* #5DBCD2;
+
+	/*background: rgba(69,69,69,1.00);
+color: #FFFFFF;*/
+  }
+}
+.procedures {
+  width: 54%;
+  /*height: 500px;*/
+  /*opacity: .95;*/
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 1%;
+   border: 3px ridge #454545 /* #5DBCD2;*/;
+	background-color:#8ED8EF;
+}
+/*@media screen and (max-width:1200px){
+.procedures {
+  width: 98%;
+}}*/
+.ScrappyDoo{ /*team photo on home page*/
+    width: 40%;
+     style="opacity: 50%";
+    float: left;
+     margin: 0;
+  position:relative;
+  top: 10%;
+      -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.VelmaDinkley { /*Flowchart on home page*/
+ width: auto;
+    height: auto;
+    align-items:center;
+    align-self: center;
+    align-content: center;
+    
+}
+@media only screen and (max-width:1200px){
+    .ScrappyDoo{
+        opacity: 0%
+    }
+}
+@media screen and (min-width:1200px) {
+  .VelmaDinkley {
+    max-width: 60%;
+  }
+    
+}
+.MsDaphneBlake {/*div for MagicWindow iframe (Phase ONLY)*/
+  width: 54%;
+  height: 100%;
+  background-color: #ffffff;
+}
+.ScoobertDoo{ /*div for MagicWindow iframe (Steps ONLY)*/
+position: -webkit-sticky;
+    position: sticky;
+ top: 20px;
+  background-color: #ffffff;
+}
+.MrFredJones { /*MagicWindow iframe*/
+  width: 100%;
+  height: 700px;
+}
+.ProcessGuidance { /*has to be one word*/
+  width: 20%;
+  opacity: .95;
+  color:#000000;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 1%;
+  padding: 10px;
+  border: 2px inset #3db2ff;
+
+	/*background: rgba(69,69,69,1.00);
+color: #FFFFFF;*/
+}
+/*@media screen and (max-width:1200px){
+.ProcessGuidance {
+  width: 48%;
+}}*/
+.InterAgency {
+  width: 24%;
+  /*opacity: .95;*/
+  /*background-image: url("https://connect.ncdot.gov/Style%20Library/Images/pinstripe.gif");*/
+  color:#00000f; /*#3d087b;*/
+  background-color: #fffaee;
+  background-position: top left;
+  /*background-repeat: repeat-x;*/
+  border-style: ridge;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 1%;
+  padding: 10px;
+  border: 2px inset #e6d4a9;
+}
+/*@media screen and (max-width:1200px){
+.InterAgency {
+  width: 48%;
+}}*/
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  left: -200px;
+  margin-right: -200px;
+  background-image: url("https://connect.ncdot.gov/Style%20Library/Images/pinstripe.gif");
+  background-color: #fff;
+  background-position: top left;
+  background-repeat: repeat-x;
+  padding: 00px;
+  background-size: cover;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 1px;
+}
+.sidenav.expanded {
+  height: 100%;
+  width: 200px;
+  margin-top: 5%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  padding-top: 1px;
+  border-top: none;
+}
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #ffffff;
+  background-color: #588023
+}
+/* Main content */
+.main {
+  margin-left: 0px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.main.expanded {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 16px;
+}
+/* .buttonFlashClose {
+  -webkit-border-radius: 55px;
+  border-radius: 55px;
+  height: 58px;
+  border: none;
+  color: #ffffff;
+  background: linear-gradient(bottom, #b20000, #ef3e42);
+  background: -ms-linear-gradient(bottom, #b20000, #ef3e42);
+  background: -webkit-gradient(linear, left bottom, left top, from(#b20000), to(#ef3e42));
+  background: -moz-linear-gradient(bottom, #b20000, #ef3e42);
+  cursor: pointer;
+  padding: 0px;
+  background-size: cover;
+  font-size: 18px;
+  padding: 0px 0px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: 200px;
+} */
+@media only screen and (max-width: 949px) {
+  .buttonPrev {
+    background-color: #D9534F;
+    -webkit-border-radius: 6px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    border-radius: 6px;
+    border: none;
+    float: left;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    
+  }
+  .buttonNext {
+    background-color: #428bca;
+    -webkit-border-radius: 6px;
+    white-space: nowrap;
+    overflow:hidden;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    display: block;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 53px;
+  }
+  .buttonPrev a {
+    color: #FFFFFF;
+    background-color: #D9534F;
+    padding: 5px 5px 5px 5px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    display: block;
+    border: none;
+  }
+  .buttonNext a {
+    color: #FFFFFF;
+    background-color: #428bca;
+    padding: 5px 5px 5px 5px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: none;
+    display: block;
+  }
+  .buttonPrev a:hover {
+    color: #D9534F;
+    background-color: #FFFFFF;
+   
+  }
+  .buttonNext a:hover {
+    color: #428bca;
+    background-color: #FFFFFF;
+  }
+  /*
+  .buttonPrevSmall {
+    background-color: #D9534F;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: none;
+    float: right;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+  }
+  .buttonNextSmall {
+    background-color: #428bca;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    display: block;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+  }
+  .buttonPrevSmall a {
+    color: #FFFFFF;
+    background-color: #D9534F;
+    padding: 5px 5px 5px 5px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    display: block;
+    border: none;
+  }
+  .buttonNextSmall a {
+    color: #FFFFFF;
+    background-color: #428bca;
+    padding: 5px 5px 5px 5px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: none;
+    display: block;
+  }
+  .buttonPrevSmall a:hover {
+    color: #D9534F;
+    background-color: #FFFFFF;
+  }
+  .buttonNextSmall a:hover {
+    color: #428bca;
+    background-color: #FFFFFF;
+  }*/
+}
+@media only screen and (min-width: 950px) {
+  .buttonPrev {
+    background-color: #D9534F;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: none;
+    float: left;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+  }
+  .buttonNext {
+    background-color: #428bca;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    display: block;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+  }
+  .buttonPrev a {
+    color: #FFFFFF;
+    background-color: #D9534F;
+    padding: 5px 5px 5px 5px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    display: block;
+    border: none;
+  }
+  .buttonNext a {
+    color: #FFFFFF;
+    background-color: #428bca;
+    padding: 5px 5px 5px 5px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: none;
+    display: block;
+  }
+  .buttonPrev a:hover {
+    color: #D9534F;
+    background-color: #FFFFFF;
+  }
+  .buttonNext a:hover {
+    color: #428bca;
+    background-color: #FFFFFF;
+  }
+  .buttonPrevSmall {
+    display: none;
+  }
+  .buttonNextSmall {
+   display: none;
+  }
+  .buttonPrevSmall a {
+    display: none;
+  }
+  .buttonNextSmall a {
+   display: none;
+  }
+  .buttonPrevSmall a:hover {
+    display: none;
+  }
+  .buttonNextSmall a:hover {
+    display: none;
+  }
+}
+.fredJones {
+  width: 100%;
+}
+.preview {
+  width: 75%;
+}
+.mainBody { /*has to be one word*/
+  width: 25%;
+}
+.test, .example { /*multi-call has to have "." before each variale; call order doesn't matter*/
+  padding: 10px;
+  height: 300px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*accordian*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.collapsible {
+  background-color: #537081;
+  color: white;
+  /*cursor: pointer;*/
+  cursor: help;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border: 1px outset #454545;
+}
+.active, .collapsible:hover {
+  background-color: #68B4E3;
+}
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212"
+}
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.content2 {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.contentAllShow {
+  padding: 0 18px;
+  
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+/*end of accordian*/
+/* modal*/
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  background-image: file: ///S:/Shared/TPB%20Temporary/Chris%20Connolly/Online/WORK/Webpages/7) Closeout/Closeout.html#close;
+    z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  visibility: visible;
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+.iframe > div {
+  visibility: visible;
+  width: 1000px;
+  height: 80%;
+  position: relative;
+  margin: 7% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+.ProfessorPericles > div {
+  width: 60%;
+  height: 50%;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+.newClose {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.maintitlesection {
+  position: absolute;
+  width: 300px;
+  right: 30px;
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+  opacity: 1.0;
+  z-index: inherit;
+}
+.close:hover {
+  background: #00d9ff;
+  width: 24px;
+}
+/*modal*/
+.headerForSAP {
+  background-color: #537081;
+  color: white;
+  /*cursor: pointer;*/
+  cursor: help;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border: 1px outset #454545;
+}
+/* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+.w3-modal {
+  z-index: 3;
+  display: none;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4)
+}
+.w3-modal-content {
+  visibility: visible;
+  width: 60%;
+  max-width: 100000px;
+  max-height: 95%;
+  position: relative;
+  margin: 7% auto;
+  padding: 20px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+/* Colors */
+@media only screen and (max-width: 1249px) {
+  .w3-modal-content {
+    visibility: visible;
+    width: 80%;
+    max-height: 95%;
+    position: relative;
+    margin: 7% auto;
+    padding: 20px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+  }
+  .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    background-image: file: ///S:/Shared/TPB%20Temporary/Chris%20Connolly/Online/WORK/Webpages/7) Closeout/Closeout.html#close;
+      z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modalDialog > div {
+    visibility: visible;
+    width: 80%;
+    max-height: 95%;
+    position: relative;
+    margin: 7% auto;
+    padding: 20px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+  }
+}
+.modalSidebar {
+  width: 25%;
+  float: left;
+  height: 92%
+}
+.modalMain {
+  width: 75%;
+  height: 92%;
+  float: right
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 3px 12px 3px;
+  text-align: center;
+  /*border: 1px solid #ddd;*/
+  margin-bottom: 12px;
+}
+#myInput2 {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#SECTIONS li {
+  display: none;
+}
+#RESOURCES li {
+  display: none;
+}
+#SECTIONS {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#RESOURCES {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#SECTIONS li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+#RESOURCES li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+#SECTIONS li a:hover:not(.header) {
+  background-color: #eee;
+}
+#RESOURCES li a:hover:not(.header) {
+  background-color: #eee;
+}
+/* The navigation menu */
+.subnavbar {
+  overflow: hidden;
+  background-color: #333;
+}
+/* Navigation links */
+.subnavbar a {
+  float: left;
+  font-size: 13.8px;
+  color: white;
+  text-align: center;
+  padding: 13.8px 13.8px;
+  text-decoration: none;
+}
+/* The subnavigation menu */
+.subsubnav {
+  float: left;
+  overflow: hidden;
+
+}
+/* Subnav button */
+.subsubnav .subsubnavbtn {
+  font-size: 13.8px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 13.8px 13.8px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+  transition: 0.25s;
+}
+.subsubnavbtn a {
+  color: #ff2442;
+  background: #e8f6ef;
+  padding: 0px 0px;
+   
+  
+}
+/* Add a red background color to navigation links on hover */
+.subnavbar a:hover {
+  color: #bf1363;
+  background: #fcd1a4;/*here*/
+  border-radius: 5px;
+  
+
+}
+.subsubnav:hover .subsubnavbtn {
+  color: #bf1363;
+  background: #fcd1a4;/*here*/
+  border-radius: 5px;
+      width: 100%;
+
+
+}
+
+
+.subsubnavbtn.headerActive {
+  color: #2d46b9;
+  background: #e8f6ef;
+  border-radius: 5px;
+  margin-left:1.5px;
+  margin-right:1.5px;
+
+}
+
+/* Style the subnav content - positioned absolute */
+.subsubnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  color: #bf1363;
+  background: #ffedda;
+  width: 100%;
+  z-index: 1;
+     /*text-align: center;
+    align-content: center;
+      align-items: center;
+      align-self: center;*/
+    
+      
+}
+/* Style the subnav links */
+.subsubnav-content a {
+  float: left;
+    
+  color: #bf1363;
+  background: #ffedda;
+      
+    
+}
+/* Add a grey background color on hover */
+.subsubnav-content a:hover {
+  color: #ffffff;
+  background: #bf1363;
+  border-color: #007bff;
+}
+/* When you move the mouse over the subnav container, open the subnav content */
+.subsubnav:hover .subsubnav-content {
+  display: block;
+  border-color: #000000;
+}
+input[type=text] {
+  width: 130px;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+
+    
+@media only screen and (min-width:866px) {/*1866px*/
+  .subsubnav-content {
+  display: none;
+  overflow:hidden;
+  position: absolute;
+  left: 0;
+  color: #bf1363;
+  background: #ffedda;
+  /*width: 100%;*/
+  z-index: 0;
+  text-align:left;
+  vertical-align: middle;
+  position:static;
+}
+  .subsubnav {
+  float: left;
+  overflow: hidden;
+    /*height: 100px;*/
+}
+	.subsubnavbtn a:hover{
+	 height:100px;
+
+}
+
+.subnavbar hover{
+	height:100px;
+}
+.subsubnavbtn, .subsubnavbtn.headerActive {
+	text-align:left;
+	width:100%;
+	padding-right:5px;
+	padding-left:13.8px;
+}
+  }
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 40%;
+}
