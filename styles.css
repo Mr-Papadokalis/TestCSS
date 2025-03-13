@@ -1,11 +1,41 @@
+/* Base styles */
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
+/* Wrapper holds our background */
+.wrapper {
+  background-color: #f0f8ff;
+  min-height: 100vh;  /* Ensures it covers the full viewport */
+  transition: background-color 0.3s;
+}
+
+/* When the checkbox is checked, change the wrapper background to blue */
+#toggleBg:checked + .toggle-btn + .wrapper {
+  background-color: blue;
+}
+
+/* Style the label to look like a button */
+.toggle-btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px;
+  border: none;
+  font-size: 16px;
+}
+
+.toggle-btn:hover {
+  background-color: #45a049;
+}
+
+/* Other content styles */
 h1 {
   color: #333;
 }
@@ -13,17 +43,4 @@ h1 {
 p {
   color: #555;
   font-size: 18px;
-}
-
-button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #45a049;
 }
